@@ -34,10 +34,14 @@ ul {
 img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .list {
   list-style-type: none;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
 }
 
 .link {
@@ -45,9 +49,13 @@ img {
 }
 
 .container {
-  max-width: 1440px;
-  padding: 0 10.83%;
+  max-width: 1158px;
+  padding: 0 15px;
   margin: 0 auto;
+}
+
+.section {
+  padding-top: 120px;
 }
 
 .visually-hidden {
@@ -109,6 +117,7 @@ img {
 
 .hero {
   background-color: var(--dark-color);
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -118,6 +127,7 @@ img {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -128,6 +138,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   background-color: var(--primary-brand-color);
+  border-radius: 4px;
+  padding: 16px 32px;
 }
 
 .hero-btn:hover,
@@ -136,7 +148,7 @@ img {
   cursor: pointer;
 }
 
-/* Peculiarities */
+/* Benefits */
 
 .item-title {
   color: var(--dark-color);
@@ -162,6 +174,7 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 /* Our Team */
