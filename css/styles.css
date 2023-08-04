@@ -73,6 +73,10 @@ img {
 
 /* header */
 
+header {
+  border-bottom: 1px solid var(--accent-color);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -177,6 +181,11 @@ img {
   padding-bottom: 0;
 }
 
+.benefit-title,
+.team-name {
+  margin-bottom: 8px;
+}
+
 .item-title {
   color: var(--dark-color);
   font-size: 20px;
@@ -212,6 +221,14 @@ img {
 
 .team-item {
   background-color: var(--white-background-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.item-description {
+  padding: 32px 0;
 }
 
 .center {
@@ -241,6 +258,14 @@ img {
 
 /* Portfolio */
 
+.portfolio-menu {
+  padding: 0 271px 84px 271px;
+}
+
+.portfolio-menu li:nth-child(2) {
+  flex-shrink: 0;
+}
+
 .portfolio-btn {
   color: var(--primary-brand-color);
   font-family: inherit;
@@ -250,6 +275,7 @@ img {
   letter-spacing: 0.04em;
   background: var(--light-color);
   border: 1px solid var(--accent-color);
+  padding: 12px 24px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -264,6 +290,12 @@ img {
   flex-wrap: wrap;
 }
 
+.portfolio-description {
+  padding-left: 16px;
+  border: 1px solid var(--accent-color);
+}
+
 .txt {
   color: var(--text-color);
+  margin-top: 8px;
 }
