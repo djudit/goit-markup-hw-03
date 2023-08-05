@@ -228,6 +228,10 @@ img {
 
 /* What are we doing */
 
+.work-section {
+  padding-top: 0;
+}
+
 .title-section {
   color: var(--dark-color);
   text-align: center;
@@ -301,12 +305,15 @@ img {
 
 /* Portfolio */
 
+.section-portfolio {
+  padding: 96px 0 120px 0;
+}
+
 .portfolio-menu {
   display: flex;
   gap: 24px;
   padding: 0 271px 84px 271px;
   justify-content: center;
-  margin-bottom: 72px;
 }
 
 .portfolio-menu li:nth-child(2) {
@@ -346,9 +353,13 @@ img {
   padding-left: 16px;
   border: 1px solid var(--accent-color);
   border-top: none;
+  padding: 32px 16px;
+}
+
+.portfolio-description h2 {
+  margin-bottom: 8px;
 }
 
 .txt {
   color: var(--text-color);
-  margin-top: 8px;
 }
