@@ -109,6 +109,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   margin-right: 76px;
+  display: inline-block;
 }
 
 .logo-span {
@@ -191,7 +192,7 @@ img {
 /* Benefits */
 
 .benefits {
-  padding-bottom: 0;
+  padding: 120px 0;
 }
 
 .benefits-list {
@@ -200,7 +201,7 @@ img {
 }
 
 .benefits-item {
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .benefit-title,
@@ -240,6 +241,10 @@ img {
   gap: 24px;
 }
 
+.work-item {
+  flex-basis: calc((100% - 3 * 16px) / 3);
+}
+
 /* Our Team */
 
 .team {
@@ -275,6 +280,10 @@ img {
   padding-bottom: 100px;
 }
 
+.footer .logo {
+  margin-bottom: 16px;
+}
+
 .footer .logo-span {
   color: var(--light-color);
 }
@@ -284,7 +293,6 @@ img {
 }
 
 .footer-txt {
-  margin-top: 16px;
   width: 264px;
 }
 
@@ -294,6 +302,7 @@ img {
   display: flex;
   gap: 24px;
   padding: 0 271px 84px 271px;
+  justify-content: center;
 }
 
 .portfolio-menu li:nth-child(2) {
@@ -315,6 +324,7 @@ img {
 .portfolio-btn:focus {
   cursor: pointer;
   background: var(--pressed-state-color);
+  border: 1px solid transparent;
   color: var(--white-background-color);
 }
 
