@@ -38,10 +38,12 @@ img {
 }
 
 .list {
-  list-style-type: none;
+  list-style: none;
+}
+
+.nav-list {
   display: flex;
-  gap: 24px;
-  justify-content: space-between;
+  gap: 40px;
 }
 
 .link {
@@ -73,13 +75,12 @@ img {
 
 /* header */
 
-header {
+.header-section {
   border-bottom: 1px solid var(--accent-color);
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -87,7 +88,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0;
 }
 
 .menu-item {
@@ -96,6 +96,8 @@ header {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: inline-block;
 }
 
 .logo {
@@ -114,15 +116,21 @@ header {
 }
 
 .address {
-  font-style: normal;
-  padding: 24px 0;
+  margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .address-item {
+  font-style: normal;
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: inline-block;
 }
 
 .menu-item:hover,
@@ -151,6 +159,9 @@ header {
   line-height: 1.07;
   letter-spacing: 0.02em;
   margin-bottom: 48px;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .box-btn {
@@ -167,18 +178,29 @@ header {
   background-color: var(--primary-brand-color);
   border-radius: 4px;
   padding: 16px 32px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--pressed-state-color);
-  cursor: pointer;
 }
 
 /* Benefits */
 
 .benefits {
   padding-bottom: 0;
+}
+
+.benefits-list {
+  display: flex;
+  gap: 24px;
+}
+
+.benefits-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .benefit-title,
@@ -213,10 +235,20 @@ header {
   margin-bottom: 72px;
 }
 
+.work-list {
+  display: flex;
+  gap: 24px;
+}
+
 /* Our Team */
 
 .team {
   background-color: var(--light-color);
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
@@ -239,7 +271,7 @@ header {
 
 .footer {
   background-color: var(--dark-color);
-  padding-top: 101.5px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -252,13 +284,15 @@ header {
 }
 
 .footer-txt {
-  margin-top: 17.5px;
+  margin-top: 16px;
   width: 264px;
 }
 
 /* Portfolio */
 
 .portfolio-menu {
+  display: flex;
+  gap: 24px;
   padding: 0 271px 84px 271px;
 }
 
@@ -287,7 +321,10 @@ header {
 /* Pictures of works */
 
 .portfolio-img {
+  display: flex;
   flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
 .portfolio-description {
